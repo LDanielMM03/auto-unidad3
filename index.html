@@ -171,18 +171,31 @@ table.t td:first-child{color:var(--cyan);font-family:var(--mono);font-size:.95em
   <svg class="svgbox" viewBox="0 0 980 190" role="img" aria-label="Fases del compilador">
     <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#537AA0"/></marker></defs>
     <g font-family="JetBrains Mono" font-size="16" text-anchor="middle">
+      
       <rect x="10" y="55" width="180" height="80" rx="10" fill="#FFFFFF" stroke="#AFCDEA"/>
-      <text x="100" y="90" fill="#12324F">Análisis</text><text x="100" y="112" fill="#537AA0" font-size="13">léxico · sintáctico · semántico</text>
+      <text x="100" y="80" fill="#12324F">Análisis</text>
+      <text x="100" y="102" fill="#537AA0" font-size="12">léxico · sintáctico</text>
+      <text x="100" y="118" fill="#537AA0" font-size="12">· semántico</text>
+
       <rect x="240" y="55" width="170" height="80" rx="10" fill="#FFFFFF" stroke="#AFCDEA"/>
-      <text x="325" y="90" fill="#12324F">Código</text><text x="325" y="112" fill="#537AA0" font-size="13">intermedio (3 direcciones)</text>
+      <text x="325" y="80" fill="#12324F">Código</text>
+      <text x="325" y="102" fill="#537AA0" font-size="12">intermedio</text>
+      <text x="325" y="118" fill="#537AA0" font-size="12">(3 direcciones)</text>
+
       <rect x="460" y="45" width="200" height="100" rx="10" fill="#DDEBFA" stroke="#0E6FDD" stroke-width="2"/>
-      <text x="560" y="88" fill="#0E6FDD" font-weight="600">OPTIMIZADOR</text>
-      <text x="560" y="112" fill="#0C8FC0" font-size="13">independiente de máquina</text>
+      <text x="560" y="80" fill="#0E6FDD" font-weight="600">OPTIMIZADOR</text>
+      <text x="560" y="102" fill="#0C8FC0" font-size="12">independiente</text>
+      <text x="560" y="118" fill="#0C8FC0" font-size="12">de máquina</text>
+
       <rect x="710" y="55" width="170" height="80" rx="10" fill="#FFFFFF" stroke="#AFCDEA"/>
-      <text x="795" y="90" fill="#12324F">Generador</text><text x="795" y="112" fill="#537AA0" font-size="13">de código objeto</text>
+      <text x="795" y="80" fill="#12324F">Generador</text>
+      <text x="795" y="102" fill="#537AA0" font-size="12">de código</text>
+      <text x="795" y="118" fill="#537AA0" font-size="12">objeto</text>
+
       <line x1="190" y1="95" x2="236" y2="95" stroke="#537AA0" stroke-width="2" marker-end="url(#ar)"/>
       <line x1="410" y1="95" x2="456" y2="95" stroke="#537AA0" stroke-width="2" marker-end="url(#ar)"/>
       <line x1="660" y1="95" x2="706" y2="95" stroke="#537AA0" stroke-width="2" marker-end="url(#ar)"/>
+      
       <text x="560" y="170" fill="#537AA0" font-size="13">después: optimizaciones dependientes de máquina (registros, mirilla)</text>
     </g>
   </svg>
