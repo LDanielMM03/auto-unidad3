@@ -517,27 +517,7 @@ d = a - d   <span class="cm">// ¡mismo nodo que b! (compartido)</span></pre>
   </div>
 </section>
 
-<section class="slide" data-sec="3.2.3 · herramientas en la práctica">
-  <p class="eyebrow frag" style="--i:0"><b>3.2.3</b> · del libro al laboratorio</p>
-  <h2 class="frag" style="--i:1">Estas ideas viven en compiladores reales</h2>
-  <div class="cols eq" style="margin-top:.3em">
-    <div class="card frag" style="--i:2">
-      <h3>GCC</h3>
-      <pre class="code">gcc -O2 programa.c
-gcc -fdump-tree-optimized <span class="cm">// ver el
-resultado del análisis de flujo</span></pre>
-      <p>Los niveles <b>-O1/-O2/-O3</b> activan por capas las transformaciones de 3.2.2.</p>
-    </div>
-    <div class="card frag" style="--i:3">
-      <h3>LLVM</h3>
-      <pre class="code">clang -emit-llvm -S programa.c
-opt -passes=<span class="str">'mem2reg,gvn,dce'</span></pre>
-      <p>Cada <b>pass</b> es una transformación sobre el CFG; <b>gvn</b> elimina subexpresiones, <b>dce</b> el código muerto.</p>
-    </div>
-  </div>
-  <p class="frag" style="--i:4">Y para <em>medir</em> el costo de ejecución (3.2.1) sobre programas reales: perfiles con <strong>gprof</strong> y análisis de memoria/caché con <strong>Valgrind (Cachegrind)</strong>.</p>
-  <p class="cite frag" style="--i:5">Cooper &amp; Torczon (2012), cap. 8–10; documentación clásica de GNU/LLVM</p>
-</section>
+
 
 
 
